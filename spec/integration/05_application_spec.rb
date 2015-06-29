@@ -17,6 +17,7 @@ describe 'Application' do
   it 'returns html containing the correct elements' do
     # First test to see that correct elements exist
     expected_stuff.each do |element|
+      # binding.pry
       expect(last_response.body).to match(/#{element}/)
     end
 
